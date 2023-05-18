@@ -1,0 +1,57 @@
+{
+    "component": {
+
+        "body": [
+            "const $1 = () => {",
+            "    ",
+            "    ",
+            "    ",
+            "    return (",
+            "        ",
+            "        <Wrapper>",
+            "            <Layout>",
+            "            ",
+            "            </Layout>",
+            "        </Wrapper>",
+            "    );",
+            "    ",
+            "};",
+            "",
+            "export default $1;",
+            "",
+            "const Wrapper = styled(BWrapper)`",
+            "",
+            "",
+            "",
+            "`;",
+            "const Layout = styled(BLayout)`",
+            "",
+            "",
+            "",
+            "`;",
+            "",
+        ],
+        "prefix": "#component",
+
+    },
+	"changelogNew": {
+        "body": [
+            "## **${1:0}.${2:0}.${3:0} - $CURRENT_DATE.$CURRENT_MONTH.$CURRENT_YEAR**",
+            "### **Изменения**",
+            "- #### **_**",
+            "    ",
+            "### **Исправления**",
+            "- #### **_**",
+            "    ",
+            "***",
+        ],
+        "prefix": "#changelogNew"
+    },
+    "changelogPoint": {
+        "body": [
+            "- #### **$1**",
+            "    $0",
+        ],
+        "prefix": "#changelogPoint",
+    },
+}
