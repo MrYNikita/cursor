@@ -13,6 +13,7 @@ import StyleAll from './styles/selectors/all';
 import StyleBody from './styles/selectors/body';
 import StyleImg from './styles/selectors/img';
 import StyleSvg from './styles/selectors/svg';
+import StyleInput from './styles/selectors/input';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -33,6 +34,7 @@ root.render(
         <StyleImg />
         <StyleSvg />
         <StyleBody />
+        <StyleInput />
 
         <Provider store={store}>
             <App />

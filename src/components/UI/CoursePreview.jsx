@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import BLayout from "../basics/BLayout";
 import BP from "../basics/BP";
-import BasicTitle from "../basics/BTitle";
+import BTitle1 from "../basics/BTitle";
 import BWrapper from "../basics/BWrapper";
 
 const CoursePreview = (props) => {
@@ -27,7 +27,7 @@ const CoursePreview = (props) => {
 
 export default CoursePreview;
 
-const Title = styled(BasicTitle)`
+const Title = styled(BTitle1)`
 padding: 0.5vh;
 font-size: 1.25rem;
 grid-area: 'title';

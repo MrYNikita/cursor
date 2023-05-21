@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BLayout from "../basics/BLayout";
-import BasicTitle from "../basics/BTitle";
+import BTitle1 from "../basics/BTitle";
 import BWrapper from "../basics/BWrapper";
 import CourseMaterial from "./CourseMaterial";
 
@@ -19,7 +19,7 @@ const CourseMaterials = ({ materials }) => {
 
 export default CourseMaterials;
 
-const Title = styled(BasicTitle)`
+const Title = styled(BTitle1)`
 padding: 2vh 0vw 0 0;
 width: 100%;
 font-size: 1rem;

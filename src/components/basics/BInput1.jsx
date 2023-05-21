@@ -1,13 +1,9 @@
 import styled from "styled-components";
 
-const BInput = styled.input`
-
-font-weight: bold;
+const BInput1 = styled.input`
 color: var(--color-text-input);
-height: 2vh;
 text-align: center;
 border-radius: var(--border-radius-interact);
-
 `;
 
-export default BInput;
+export default BInput1;

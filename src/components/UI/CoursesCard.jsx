@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BLayout from "../basics/BLayout";
-import BasicTitle from "../basics/BTitle";
+import BTitle1 from "../basics/BTitle";
 import BWrapper from "../basics/BWrapper";
 import { useDispatch } from "react-redux";
 import { setCourse } from "../../stores/slices/courses";
@@ -40,7 +40,7 @@ const Preview = styled.img`
 width: 100%;
 height: 100%;
 `;
-const Title = styled(BasicTitle)`
+const Title = styled(BTitle1)`
 color: var(--color-8);
 font-size: 15px;
 `;

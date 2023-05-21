@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import BInput from "../basics/BInput";
+import BInput1 from "../basics/BInput1";
 import BLayout from "../basics/BLayout";
 import BP from "../basics/BP";
 import BWrapper from "../basics/BWrapper";
@@ -60,7 +60,7 @@ const CoursesSearchPanel = (props) => {
 
 export default CoursesSearchPanel;
 
-const Input = styled(BInput)`
+const Input = styled(BInput1)`
 width: 100%;
 height: 2.5vh;
 `;

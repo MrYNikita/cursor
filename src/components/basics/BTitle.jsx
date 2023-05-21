@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import BText from "./BText";
 
-const BasicTitle = styled.h6.attrs(props => ({ as: props.as ?? 'h6' }))`
-font-weight: bold;
+const BTitle = styled(BText).attrs(() => ({ as: 'h3' }))`
+    
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 3px;
+
 `;
 
-export default BasicTitle;
+export default BTitle;
