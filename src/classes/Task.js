@@ -1,36 +1,38 @@
 export default class Task {
 
-    static count = 0;
+    /** @type {number} */
+    id = null;
+    /** @type {number} */
+    result = 0;
+    /** @type {(string|number)[]?} */
+    inputs = [];
+    /** @type {string[]?} */
+    answers = [];
+    /** @type {string[]?} */
+    prompts = [];
+    /** @type {() => JSX.Element} */
+    component = null;
+    /** @type {string?} */
+    condition = null;
+    /** @type {string?} */
+    description = null;
 
-    /**
-     * @type {string}
-    */
-    name = null;
-    answer = null;
+    /** @arg {Task} params */
+    constructor (params) {
 
-    /** @arg {Course} t */
-    constructor(t) {
+        Object.keys(this).forEach(key => params[key] !== undefined ? this[key] = params[key] : this[key] ? this[key] : null);
 
-        if (!t.id) {
+    };
 
-            t.id = Task.count++;
+    check() {
+
+        if (!this.answers.length || this.inputs.every((input, index) => input && input === this.answers[index])) {
+
+            return true;
 
         };
-        if (!t.name) {
 
-            t.name = `course-${t.id + '0'.repeat(4 - t.id.toString().length) + Task.name}`;
-
-        };
-
-        Object.keys(this).forEach(key => {
-
-            if (t[key] !== undefined) {
-
-                this[key] = t[key];
-
-            };
-
-        });
+        return false;
 
     };
 

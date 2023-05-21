@@ -1,23 +1,15 @@
 import { useRef } from "react";
-import { useSelector } from "react-redux";
 import styled from "styled-components";
-// import Course from "../../classes/Course";
 import BLayout from "../basics/BLayout";
 import BWrapper from "../basics/BWrapper";
 
 const PTest = () => {
 
     const text = useRef('');
-    /** @type {Course} */
-    const test = useSelector((state) => state.course) ?? null;
-    // const dispatch = useDispatch();
-
-    console.log(test);
 
     return (
         <Wrapper>
             <Layout>
-                <p>{test.course.name}</p>
                 <Field contentEditable
                     onInput={(e) => {
 

@@ -10,15 +10,7 @@ export default class Route {
     /** @arg {Route} params */
     constructor (params) {
 
-        Object.keys(this).forEach(key => {
-
-            if (params[key] !== undefined) {
-
-                this[key] = params[key];
-
-            };
-
-        });
+        Object.keys(this).forEach(key => params[key] !== undefined ? this[key] = params[key] : this[key] ? this[key] : null);
 
     };
 

@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import BLayout from "../basics/BLayout";
-import BWrapper from "../basics/BWrapper";
+import BLayout from "../../../../basics/BLayout";
+import BWrapper from "../../../../basics/BWrapper";
 
-const PLogin = () => {
+const CTaskInput = () => {
     
     
     
@@ -10,14 +10,14 @@ const PLogin = () => {
         
         <Wrapper>
             <Layout>
-                
+            
             </Layout>
         </Wrapper>
     );
     
 };
 
-export default PLogin;
+export default CTaskInput;
 
 const Wrapper = styled(BWrapper)`
 

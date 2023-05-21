@@ -1,24 +1,20 @@
+import Task from "./Task";
+
 export default class Material {
 
     /** @type {number} */
     id = null;
     /** @type {string} */
     name = null;
+    /** @type {Task[]} */
+    tasks = [];
     /** @type {string} */
     description = null;
 
-    /** @arg {Material} t */
-    constructor (t) {
+    /** @arg {Material} params */
+    constructor (params) {
 
-        Object.keys(this).forEach(key => {
-
-            if (t[key] !== undefined) {
-
-                this[key] = t[key];
-
-            };
-
-        });
+        Object.keys(this).forEach(key => params[key] !== undefined ? this[key] = params[key] : this[key] ? this[key] : null);
 
     };
 

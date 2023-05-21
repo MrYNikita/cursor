@@ -17,13 +17,9 @@ export default class Course {
     tagsKey = [];
 
     /**
-     * Пока-что здесь будут храниться задачи.
-    */
-    tasks = [];
-    /**
      * Материалы.
      * ***
-     * @type {import('./Material.js').default[]}
+     * @type {import('./Material.js').CMaterial[]}
     */
     materials = [];
     /**
@@ -83,29 +79,21 @@ export default class Course {
     */
     subscription = null;
 
-    /** @arg {Course} t */
-    constructor(t) {
+    /** @arg {Course} params */
+    constructor(params) {
 
-        if (!t.id && t.id !== 0) {
+        if (!params.id && params.id !== 0) {
 
-            t.id = Course.count++;
-
-        };
-        if (!t.name) {
-
-            t.name = `course-${t.id + '0'.repeat(4 - t.id.toString().length) + Course.name}`;
+            params.id = Course.count++;
 
         };
+        if (!params.name) {
 
-        Object.keys(this).forEach(key => {
+            params.name = `course-${params.id + '0'.repeat(4 - params.id.toString().length) + Course.name}`;
 
-            if (t[key] !== undefined) {
+        };
 
-                this[key] = t[key];
-
-            };
-
-        });
+        Object.keys(this).forEach(key => params[key] !== undefined ? this[key] = params[key] : this[key] ? this[key] : null);
 
     };
 

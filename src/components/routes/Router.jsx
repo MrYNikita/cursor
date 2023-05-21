@@ -3,8 +3,6 @@ import routes from "./Routes";
 
 const Router = () => {
 
-    console.log(routes);
-
     return (
 
         <BrowserRouter>

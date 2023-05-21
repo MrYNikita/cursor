@@ -7,7 +7,7 @@ const courseManagmentAccounting = new Course({
     id: 2,
     name: 'Управленческий учёт',
     tags: ['Бухгалтерия', 'Баланс', 'Финансы'],
-    preview: 'https://proforientator.ru/upload/img/publications/stati/buhgalter1.jpg',
+    preview: 'https://arenda-it.ru/wp-content/uploads/2020/09/hypnocat.png',
     materials: [
 
         materail1,

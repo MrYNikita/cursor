@@ -30,12 +30,15 @@ const Profile = () => {
 export default Profile;
 
 const Avatar = styled.img`
-width: 1.5vw;
+width: 2vw;
 border: 0.1vw solid var(--color-1);
 border-radius: 50%;
 
-@media screen and (width <= 1200px) {
-    width: 10vw;
+@media screen and (width <= 749px) {
+    width: 7vw;
+}
+@media screen and (width > 749px) and (width <= 1140px) {
+    width: 5vw;
 }
 `;
 const Toogle = styled(BLayout)`
@@ -50,7 +53,7 @@ height: 1.2vh;
 position: relative;
 
 @media screen and (width <= 1200px) {
-    width: 10vw;
+    width: 2vw;
 }
 
 ${props => props.toogle === 'true' ? `rotate: 180deg;` : ''}
@@ -59,7 +62,6 @@ ${props => props.toogle === 'true' ? `rotate: 180deg;` : ''}
 
 const Layout = styled(BLayout)`
 gap: 5%;
-width: 5vw;
 border-radius: var(--border-radius);
 `;
 const Wrapper = styled(BWrapper)`

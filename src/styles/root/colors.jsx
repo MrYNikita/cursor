@@ -13,6 +13,11 @@ const StyleColors = createGlobalStyle`:root {
 --color-8: #112f42;
 --color-9: #bbdfff;
 --color-10: #e7f4ff;
+
+--color-correct-0: #22ff6c;
+
+--color-uncorrect-0: #ff6e6e;
+
 --color-text: #fff;
 --color-text-input: #003352;
 --color-focus: #00c3ff;

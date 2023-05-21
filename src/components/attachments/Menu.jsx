@@ -41,11 +41,16 @@ const Wrapper = styled(BWrapper)`
 top: 9vh;
 right: 2vw;
 height: min-content;
-width: 7vw;
+width: 8vw;
 position: absolute;
 animation: 0.5s hide reverse forwards, 0.5s move;
 box-shadow: var(--box-shadow-1);
 border-radius: var(--border-radius);
 background-color: var(--color-4);
 border: 0.1vw solid var(--color-9);
+
+@media screen and (width <= 1200px) {
+    width: 20vw;
+    right: 5vw;
+}
 `;

@@ -55,8 +55,9 @@ grid-template-columns: min-content 1fr;
 `;
 const Wrapper = styled(BWrapper)`
 grid-area: preview;
-background-size: cover;
-background-position: 0% -14vh;
+background-size: 60% 100%;
+background-repeat: no-repeat;
+background-position: center center;
 
 ${props => props.preview && (`background-image: url(${props.preview});`)}
 `;

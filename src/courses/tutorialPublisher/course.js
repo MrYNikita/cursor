@@ -5,7 +5,7 @@ const courseTutorialPublisher = new Course({
     id: 1,
     name: 'Обучение - Публикуем свой первый курс',
     tags: ['Курсор'],
-    preview: 'https://planfact.io/uploads/post/1979/ycheba.jpg',
+    preview: 'https://www.unicraft.org/wp-content/uploads/2022/04/Tiny-screenwriter-sitting-on-retro-typewriter-1568x1045.jpg',
     materials: [
 
 

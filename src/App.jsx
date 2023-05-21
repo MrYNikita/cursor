@@ -2,7 +2,6 @@ import styled from "styled-components";
 import BLayout from "./components/basics/BLayout";
 import BWrapper from "./components/basics/BWrapper";
 import Header from "./components/attachments/Header";
-import Footer from "./components/attachments/Footer";
 import Main from "./components/attachments/Main";
 import Router from "./components/routes/Router";
 import Panel from "./components/attachments/Panel";
@@ -12,17 +11,17 @@ function App() {
 
     const [visPanel, setVisPanel] = useState(false);
 
-    window.addEventListener('beforeunload', e => {
+    // window.addEventListener('beforeunload', e => {
 
 
 
-    });
+    // });
 
-    document.body.addEventListener('keydown', e => {
+    // document.body.addEventListener('keydown', e => {
 
 
 
-    });
+    // });
 
     return (
         <Wrapper>
@@ -46,7 +45,6 @@ function App() {
                         }
                     }}
                 />
-                <Footer />
             </Layout>
         </Wrapper>
     );
@@ -64,7 +62,7 @@ grid-template-areas:
 ${props => props.visPanel ? 'grid-template-columns: 5% 95%;' : 'grid-template-columns: 0% 100%;'}
 ${props => props.visFooter ? 'grid-template-rows: 10% auto 10%;' : 'grid-template-rows: 10% auto 0%;'}
 
-@media screen && (width <= 800px) {
+@media screen and (width <= 800px) {
     ${props => props.visPanel ? 'grid-template-columns: 10% 90%;' : 'grid-template-columns: 0% 100%;'}
 }
 `;
