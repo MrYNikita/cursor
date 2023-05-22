@@ -6,7 +6,7 @@ export default class Material {
     id = null;
     /** @type {string} */
     name = null;
-    /** @type {number} */
+    /** @type {number?} */
     time;
     /** @type {Task[]} */
     tasks = [];
