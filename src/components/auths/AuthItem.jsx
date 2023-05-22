@@ -34,7 +34,7 @@ const Layout = styled(BLayout)`
     background-color: var(--color-8);
 
     &:hover {
-        background-color: var(--color-1);
+        background-color: var(--color-5);
     }
     
 `;

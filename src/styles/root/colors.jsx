@@ -14,6 +14,11 @@ const StyleColors = createGlobalStyle`:root {
 --color-9: #bbdfff;
 --color-10: #e7f4ff;
 
+--color-transparent-0: #ffffff75;
+--color-transparent-1: #008cff80;
+--color-transparent-2: #004f8f80;
+--color-transparent-3: #2a649694;
+
 --color-correct-0: #22ff6c;
 
 --color-uncorrect-0: #ff6e6e;

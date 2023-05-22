@@ -7,7 +7,7 @@ import { ReactComponent as ButtonEyeSvg } from '../../svg/symbols/eye.svg';
 import { ReactComponent as ButtonCloseSvg } from '../../svg/symbols/close.svg';
 import { useState } from "react";
 
-const FieldInput = ({ title, type = 'text' }) => {
+const FieldInput = ({ title, type = 'text', placeholder }) => {
 
     const [login, setLogin] = useState('');
     const [focus, setFocus] = useState(false);
@@ -20,13 +20,17 @@ const FieldInput = ({ title, type = 'text' }) => {
                 <Title>{title}</Title>
                 <Line
                     focus={focus}
-                    onBlur={() => setFocus(false)}
+                    onBlur={() => {
+                        setFocus(false);
+                        setShowPass(false);
+                    }}
                     onFocus={() => setFocus(true)}
                 >
                     <Input
                         type={type === 'password' ? showPass ? 'text' : type : type}
                         autoComplete="new-password"
                         value={login}
+                        placeholder={placeholder ?? ''}
                         onChange={(e) => {
                             setLogin(e.target.value);
                         }}
@@ -80,12 +84,12 @@ const Title = styled(BSubTitle)`
 `;
 const Line = styled(BLayout)`
 
-    gap: 0 0.5vw;
     width: 100%;
     height: 2vh;
     display: grid;
     grid-template-areas: 'input button';
 
+    ${props => `gap: ${props.focus ? '0 0.5vw' : '0 0'};`}
     ${props => `grid-template-columns: ${props.focus ? '4fr 1fr 1fr' : '1fr 0fr 0fr'};`}
 
 `;

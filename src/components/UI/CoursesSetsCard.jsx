@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BLayout from "../basics/BLayout";
-import BWrapper from "../basics/BWrapper";
+import BWindow from "../basics/PWindow";
 
 const CoursesSetsCard = (props) => {
 
@@ -31,9 +31,8 @@ align-items: start;
 align-content: flex-start;
 border-radius: var(--border-radius);
 justify-content: start;
-background-color: var(--color-3);
 `;
-const Wrapper = styled(BWrapper)`
-padding: 0 0.45% 0 0;
+const Wrapper = styled(BWindow)`
 grid-area: sets;
+background-color: var(--color-transparent-1);
 `;

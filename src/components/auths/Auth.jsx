@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import BLayout from "../basics/BLayout";
 import BWrapper from "../basics/BWrapper";
+import BSubTitle from "../basics/BSubTitle";
+import AuthItem from "./AuthItem";
 
 import { ReactComponent as SvgVk } from '../../svg/brands/vk.svg';
 import { ReactComponent as SvgHh } from '../../svg/brands/hh.svg';
-import BSubTitle from "../basics/BSubTitle";
-import AuthItem from "./AuthItem";
 
 const Auth = () => {
 
@@ -52,6 +52,6 @@ const SetIcons = styled(BLayout)`
     width: min-content;
     padding: 1vh 1vw;
     box-shadow: var(--box-shadow-1);
-    background-color: var(--color-3);
+    background-color: var(--color-transparent-2);
 
 `;

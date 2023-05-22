@@ -7,7 +7,7 @@ import CoursesSetsCard from "../UI/CoursesSetsCard";
 import CoursesSearchPanel from "../UI/CoursesSearchPanel";
 
 // Курсы
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const PCourses = () => {
 
@@ -54,10 +54,12 @@ const PCourses = () => {
 export default PCourses;
 
 const Layout = styled(BLayout)`
+gap: 0 1vw;
 display: grid;
+grid-template-rows: 1fr;
 grid-template-areas: "sets panel";
-grid-template-columns: 80% 20%;
+grid-template-columns: 8fr 2fr;
 `;
 const Wrapper = styled(BWrapper)`
-padding: 0.25% 0.25% 0.25% 0.25%;
+padding: 1.75vh 1vw;
 `;

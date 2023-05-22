@@ -4,6 +4,8 @@ import BInput1 from "../basics/BInput1";
 import BLayout from "../basics/BLayout";
 import BP from "../basics/BP";
 import BWrapper from "../basics/BWrapper";
+import BWindow from "../basics/PWindow";
+import FieldInput from "./FieldInput";
 
 const CoursesSearchPanel = (props) => {
 
@@ -19,14 +21,16 @@ const CoursesSearchPanel = (props) => {
     return (
        <Wrapper>
             <Layout>
-                <Input
+                <FieldInput title={'Название курса'} placeholder={'Готовка с Шефом Ивлевым'} />
+                <FieldInput title={'Теги'} placeholder={'Финансы, Программирование, Рисование'} />
+                {/* <Input
                     onChange={e => {
                         handleChangeSearch(e.target.value, tags);
                         setName(e.target.value);
                     }}
                     placeholder='Поиск курса'
-                />
-                <Input
+                /> */}
+                {/* <Input
                     onKeyDown={e => {
                         if (e.code === 'Enter') {
                             const tagsNew = [...new Set([...tags, e.target.value].sort((p, c) => p.length - c.length))];
@@ -38,7 +42,7 @@ const CoursesSearchPanel = (props) => {
                         };
                     }}
                     placeholder='Теги'
-                />
+                /> */}
                 <TagList>
                     {tags.map((tag, key) =>
                         <Tag
@@ -65,16 +69,19 @@ width: 100%;
 height: 2.5vh;
 `;
 const Layout = styled(BLayout)`
-row-gap: 1%;
+gap: 1vh 0;
 padding: 5%;
 border-radius: var(--border-radius);
 flex-direction: column;
 justify-content: start;
-background-color: var(--color-2);
 `;
-const Wrapper = styled(BWrapper)`
+const Wrapper = styled(BWindow)`
+
 position: relative;
 grid-area: panel;
+padding: 0 0;
+background-color: var(--color-transparent-2);
+
 `;
 const Tag = styled(BP).attrs(() => ({ as: 'div' }))`
 height: 3vh;

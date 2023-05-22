@@ -2,12 +2,22 @@ import styled from "styled-components";
 import BLayout from "../basics/BLayout";
 import BWrapper from "../basics/BWrapper";
 import Login from "../unique/Login";
-import FieldInput from "../UI/FieldInput";
+import { authenticateUser } from "../../scripts/api";
 
 const PLogin = () => {
     
-    
-    
+    try {
+
+        const user = authenticateUser('red', 'bad');
+
+        console.log(user);
+
+    } catch (error) {
+
+        console.log(error);
+
+    };
+
     return (
         
         <Wrapper>

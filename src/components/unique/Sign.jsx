@@ -30,7 +30,7 @@ const Wrapper = styled(BWindow)`
     
     width: 20vw;
     height: 40vh;
-    background: #008cff80;
+    background: var(--color-transparent-1);
     
 `;
 const Layout = styled(BLayout).attrs(() => { return { as: 'form' } })`

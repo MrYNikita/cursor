@@ -33,14 +33,14 @@ justify-content: space-between;
 const Wrapper = styled(BWrapper)`
 grid-area: header;
 padding-inline: 1%;
-background-color: var(--color-2);
+background-color: var(--color-transparent-3);
 `;
 const Brand = styled.h3`
 padding: 3%;
 border-radius: 12px;
 
 &:hover {
-    background-color: var(--color-1) !important;
+    background-color: var(--color-5) !important;
 }
 
 `;
@@ -55,7 +55,7 @@ border-radius: 12px;
 text-decoration: underline;
 
 &:hover {
-    background-color: var(--color-1);
+    background-color: var(--color-5);
     text-decoration: none;
 }
 
