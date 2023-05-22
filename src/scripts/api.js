@@ -1,8 +1,3 @@
-export function registrateUser() {
-
-
-
-};
 /**
  * @arg {string} email
  * @arg {string} password
