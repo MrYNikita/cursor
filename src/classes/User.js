@@ -45,7 +45,7 @@ class User {
      * @arg {string} email
      * @arg {string} password
     */
-    async login(email, password) {
+    async authenticate(email, password) {
 
         try {
 
